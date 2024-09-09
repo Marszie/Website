@@ -3,14 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>AutismRoom</title>
 </head>
 <body>
-    <button>STIMMING BUTTON</button>
+    <button onclick="playClickSound()">STIMMING BUTTON</button>
 
-    <a href="index.html" target="_self" title="back">
-    <button>GO BACK</button>
-    </a>
+    <audio id="ClickSound" src="click_005.ogg"></audio>
+
+    <script>
+        function playClickSound(){
+            const sound = document.getElementById("ClickSound");
+            sound.play();
+        }
+    </script>
+
+    
+    <button onclick="getOutAndRedirect()">GO BACK</button>
+
+    <audio id="tuco-get-out" src="tuco-get-out.mp3"></audio>
+
+    <script>
+        function getOutAndRedirect(){
+            const sound = document.getElementById("tuco-get-out");
+            sound.play();
+
+            sound.onended = function(){
+                window.location.href = "index.html";
+            };
+        }
+    </script>
+    
 
 </body>
 </html>
