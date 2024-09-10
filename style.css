@@ -1,0 +1,108 @@
+@font-face{
+    src: url(fonts/Jost-Regular.ttf);
+    font-family: jost-reg;
+}
+
+@font-face {
+    font-family: jost-bld;
+    src: url(Fonts/Jost-Bold.ttf);
+}
+
+@font-face {
+    font-family: jost-l;
+    src: url(Fonts/Jost-Light.ttf);
+}
+
+body{
+    background-color: #BD4D60;
+    margin: 0px;
+}
+
+
+#div1{
+    background-color:#BD4D60;
+    border-bottom: 3px solid #ffffff;
+    box-shadow: 0px 3px 3px black;
+    float: inherit;
+}
+
+#div2{
+    background-color: #dfaaaa;
+    margin-top: 1px;
+}
+
+
+#topUI{
+    color: #ffffff;
+    font-family: jost-bld;
+    font-size: 48px;
+    border-style: solid;
+    border-radius: 10px;
+    border-width: 5px;
+    box-shadow: -2px 3px 3px black;
+    text-shadow: -3px 3px 3px #973e4d;
+    margin-left: 5px;
+    margin-top: 3px;
+    margin-bottom: 6px;
+    margin-right: 5px;
+    padding: 1px;
+    padding-left: 6px;
+    padding-right: 6px;
+    width: fit-content;
+    
+    
+}
+
+#H2-1{
+    color: #ffffff;
+    font-family: jost-reg;
+    font-size: 36px;
+    margin-left: 5px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    clear: left;
+}
+
+#a1{
+    color: #BD4D60;
+    font-family: jost-bld;
+    font-size: 20px;
+    margin-left: 5px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+#p1{
+    color: #252525;
+    font-family: jost-l;
+    margin-left: 5px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+#light{
+    font-family: jost-l;
+}
+
+#bld{
+    font-family: jost-bld;
+}
+
+#input-4{
+    font-family: jost-bld;
+    color: red;
+    background-color: #252525;
+    font-size: 24px;
+    border-radius: 0px;
+}
+
+#button{
+    font-family: jost-l;
+    font-size: 1.5em;
+    border-radius: 16px;
+
+}
+
+.html{
+    text-decoration: none;
+}
