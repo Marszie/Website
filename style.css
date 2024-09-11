@@ -18,21 +18,12 @@ body{
     margin: 0px;
 }
 
-
-#div1{
-    background-color:#BD4D60;
-    border-bottom: 3px solid #ffffff;
-    box-shadow: 0px 3px 3px black;
-    float: inherit;
-}
-
 #div2{
     background-color: #dfaaaa;
     margin-top: 1px;
 }
 
-
-#topUI{
+#logo{
     color: #ffffff;
     font-family: jost-bld;
     font-size: 48px;
@@ -44,13 +35,58 @@ body{
     margin-left: 5px;
     margin-top: 3px;
     margin-bottom: 6px;
-    margin-right: 5px;
     padding: 1px;
     padding-left: 6px;
     padding-right: 6px;
     width: fit-content;
-    
-    
+    cursor: pointer;
+    margin-right: ;
+}
+
+#cat{
+    border-color: #ffffff;
+    border-style: solid;
+    border-radius: 10px;
+    border-width: 3px;
+    box-shadow: -2px 3px 3px black;
+    height: 48px;
+    margin: 0px 5px;
+}
+
+li, a{
+    color: #ffffff;
+    font-family: jost-bld;
+    text-decoration: none;
+    font-size: 32px;
+}
+
+header{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px 2%;
+}
+
+.Nav_Link{
+    list-style: none;
+}
+
+.Nav_Link li{
+    display: inline-block;
+    padding: 0px 6px;
+    border-style: solid;
+    border-radius: 10px;
+    text-shadow: -1px 1px 2px #973e4d;
+    box-shadow: -2px 3px 3px black;
+    margin: 3px;
+}
+
+.Nav_Link li a{
+    transition: all 0.3s ease 0s;
+}
+
+.Nav_Link li a:hover{
+    color: #973e4d;
 }
 
 #H2-1{

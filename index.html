@@ -15,25 +15,32 @@
 
 <body>
 
-    <div id="div1">
-    
-     <h1 id="topUI">MARSZ!</h1> 
+     <header>
 
-     <img id="topUI" src="cat-cat-tongue.gif" height="71">
+     <a href="index.html" title="refresh"><h1 id="logo">MARSZ!</h1></a>
 
-     <a class="html" id="a2" href="page2.html" target="_self" title="mauhahahahah">
-      <h1 id="topUI" id="light" style="color: #FFFFFF;"> DO NOT CLICK <span id="bld" style="color: red;">DANGER!!!</span></h1> 
-     </a>
-  
-     <a class="html" id="a3" href="shitImade.html" target="_self" title="go to the shit I made">
-          <h1 id="topUI" id="light">SHIT I MADE</h1>
-     </a>
-  
-     <a class="html" id="a4" href="autismcorner.html" target="_self" title="autismcorner">
-       <button id="topUI" id="button" style="background-color: #BD4D60; color: #FFFFFF;">AUTISTIM ROOM</button>
+     <nav>
+          <ul class="Nav_Link">
+               <li><a id="topUI" href="page2.html">DO NOT CLICK <span style="color: #ff002b;">DANGER!</span></a></li>
+               <li><a id="topUI" href="shitImade.html">GALLERY</a></li>
+               <li><a id="topUI" href="autismcorner.html">AUTISMROOM</a></li>
+          </ul>
+     </nav>
+
+     <a onclick="playClickSound()">
+     <img id="cat" src="cat-cat-tongue.gif" title="click me">
      </a>
 
-    </div>
+     <audio id="freddynose" src="fnaf-12-3-freddys-nose-sound.mp3"></audio>
+
+     <script>
+          function playClickSound(){
+              const sound = document.getElementById("freddynose");
+              sound.play();
+          }
+      </script>
+
+     </header>
 
     <div id="div2">
 
@@ -76,10 +83,6 @@
           <input id="input-4" type="submit" value="press me for cake">
      </div>
 </form>
-
-   <hr>
-
-   <hr>
 
    <img style="background-color: #FFFFFF;" src="cats.png" height="800" width="1000">
 
