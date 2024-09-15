@@ -13,25 +13,59 @@
     src: url(Fonts/Jost-Light.ttf);
 }
 
+html, body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
 body{
-    background-color: #BD4D60;
     margin: 0px;
+    background-color: #EABAC6;
+    border-style: solid;
+    border-top-color: #ffffff;
+    border-left-color: #ffffff;
+    border-bottom-color: #c09395;
+    border-right-color: #c09395;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+main{
+    flex: 1;
+    padding: 3px;
+}
+
+#Jerma{
+    border-style: inset;
+    margin: 5px 5px 5px auto;
+    background-color: #856D8D;
+    padding: 10px;
+
+}
+
+#div1{
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end;
+    height: 1000px;
+    width: 1350px;
 }
 
 #div2{
-    background-color: #dfaaaa;
-    margin-top: 1px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 
 #logo{
     color: #ffffff;
-    font-family: jost-bld;
-    font-size: 48px;
-    border-style: solid;
-    border-radius: 10px;
-    border-width: 5px;
-    box-shadow: -2px 3px 3px black;
-    text-shadow: -3px 3px 3px #973e4d;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1rem;
+    text-shadow: -3px 3px 3px rgba(0, 0, 0, 0.735);
     margin-left: 5px;
     margin-top: 3px;
     margin-bottom: 6px;
@@ -44,28 +78,48 @@ body{
 }
 
 #cat{
-    border-color: #ffffff;
-    border-style: solid;
-    border-radius: 10px;
-    border-width: 3px;
-    box-shadow: -2px 3px 3px black;
-    height: 48px;
-    margin: 0px 5px;
+    box-shadow: -2px 3px 3px rgba(0, 0, 0, 0.732);
+    height: 40px;
+    width: 35px;
+    margin: 1px;
 }
 
 li, a{
     color: #ffffff;
-    font-family: jost-bld;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-decoration: none;
-    font-size: 32px;
+    font-size: .9rem;
 }
 
 header{
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding: 10px 2%;
+    background-color: #A21D48;
+    padding: 1px .5%;
 }
+
+.navbar ul{
+    list-style: none;
+    padding: 5px 3px 5px 3px;
+    margin: 1px;
+    display: flex;
+    justify-content: flex-start;
+    box-shadow: 0px 1px 2px rgba(34, 34, 34, 0.734);
+}
+
+.navbar li{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(66, 12, 23);
+    text-shadow: -1px 1px 2px rgba(0, 0, 0, 0.377);
+    font-size: 1.05rem;
+    margin: 0px 15px 0px 0px;
+}
+
+.navbar li:not(:empty)::first-letter{
+    text-decoration: underline;
+}
+
 
 .Nav_Link{
     list-style: none;
@@ -73,12 +127,14 @@ header{
 
 .Nav_Link li{
     display: inline-block;
-    padding: 0px 6px;
-    border-style: solid;
-    border-radius: 10px;
-    text-shadow: -1px 1px 2px #973e4d;
-    box-shadow: -2px 3px 3px black;
-    margin: 3px;
+    padding: 0px 3px;
+    border-style: outset;
+    border-bottom-color: #a25931;
+    border-right-color: #a25931;
+    text-shadow: 1px 1px 1px #4c4c4c;
+    box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.735);
+    margin: 1px;
+    background-color: #E5A751;
 }
 
 .Nav_Link li a{
@@ -86,7 +142,7 @@ header{
 }
 
 .Nav_Link li a:hover{
-    color: #973e4d;
+    color: #A21D48;
 }
 
 #H2-1{
