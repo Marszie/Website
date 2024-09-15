@@ -35,31 +35,52 @@ body{
 
 main{
     flex: 1;
-    padding: 3px;
+    padding: 0px;
 }
 
 #Jerma{
     border-style: inset;
-    margin: 5px 5px 5px auto;
+    margin: 0px 10px 5px 0px;
     background-color: #856D8D;
     padding: 10px;
-
+    height: 870px;
+    width: 500px;
+    flex: 1;
 }
 
 #div1{
     margin: 0;
-    padding: 10px;
+    padding: 0px;
     display: flex;
-    justify-content: flex-end;
-    height: 1000px;
-    width: 1350px;
+    justify-content: flex-start;
+    height: auto;
+    width: auto;
 }
 
-#div2{
+.container{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    align-content: center;
+    height: 100vh;
+    padding: 0px 5px 0px 5px;
 }
+
+.item{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 5px;
+    border: solid 3px black;
+    border-top-color: #ffffff;
+    border-left-color: #ffffff;
+    border-bottom-color: #b5486b;
+    border-right-color: #b5486b;
+    text-shadow: -.5px .5px 1px rgba(32, 15, 17, 0.39);
+}
+
+.item:not(:empty)::first-letter{
+    text-decoration: underline;
+}
+
 
 #logo{
     color: #ffffff;
@@ -84,6 +105,20 @@ main{
     margin: 1px;
 }
 
+.cake{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: solid 3px black;
+    padding: 0;
+    margin: 0;
+    width: fit-content;
+    border-top-color: #ffffff;
+    border-left-color: #ffffff;
+    border-bottom-color: #c09395;
+    border-right-color: #c09395;
+    color: #A21D48;
+}
+
+
 li, a{
     color: #ffffff;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -101,7 +136,7 @@ header{
 
 .navbar ul{
     list-style: none;
-    padding: 5px 3px 5px 3px;
+    padding: 5px 3px 5px 8px;
     margin: 1px;
     display: flex;
     justify-content: flex-start;
@@ -143,41 +178,6 @@ header{
 
 .Nav_Link li a:hover{
     color: #A21D48;
-}
-
-#H2-1{
-    color: #ffffff;
-    font-family: jost-reg;
-    font-size: 36px;
-    margin-left: 5px;
-    margin-top: 2px;
-    margin-bottom: 2px;
-    clear: left;
-}
-
-#a1{
-    color: #BD4D60;
-    font-family: jost-bld;
-    font-size: 20px;
-    margin-left: 5px;
-    margin-top: 2px;
-    margin-bottom: 2px;
-}
-
-#p1{
-    color: #252525;
-    font-family: jost-l;
-    margin-left: 5px;
-    margin-top: 2px;
-    margin-bottom: 2px;
-}
-
-#light{
-    font-family: jost-l;
-}
-
-#bld{
-    font-family: jost-bld;
 }
 
 #input-4{
